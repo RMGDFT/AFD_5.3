@@ -1,0 +1,8 @@
+#!/bin/bash
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.2 > NiO64_cubic.out.2
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.3 > NiO64_cubic.out.3
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.4 > NiO64_cubic.out.4
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.5 > NiO64_cubic.out.5
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.6 > NiO64_cubic.out.6
+mpirun -np 32 --bind-to core ~/bin/pw.x < NiO64_cubic.in.7 > NiO64_cubic.out.7
+
