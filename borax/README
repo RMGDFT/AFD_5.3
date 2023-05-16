@@ -1,0 +1,2 @@
+Output files for QE and each RMG finite difference operator are stored in the corresponding subdirectory. Files are labeled from the lowest to the highest cutoff input1-input9. Command line (sed) was used to generate the actual input files used in the run from the templates in the top level directory. The lowest cutoff run (input1) was not used in the graphs since both RMG and QE were extremely under converged and would have made trends in the graphs difficult to see.
+
