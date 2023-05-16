@@ -1,0 +1,24 @@
+#!/bin/bash
+#rm input1.*
+#rm input2.*
+#rm input3.*
+#rm input4.*
+#rm input5.*
+#rm input6.*
+#rm input7.*
+#rm input8.*
+#rm input9.*
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input1
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input2
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input3
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input4
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input5
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input6
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input7
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input8
+mpirun -np 32 --bind-to core ~/bin/rmg-cpu input9
+grep final input*.log|awk '{print $8}' > t1
+paste t1 qe.energy |awk '{printf("%18.8f\n",sqrt(($2-$1)*($2-$1))/86)}' > t2
+paste x1 t2 > plot.dat
+
+
