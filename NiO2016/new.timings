@@ -1,0 +1,7 @@
+Two spin states. 14128 orbitals per spin state, 162.714 Ry Cutoff. Updated ALCC results
+using thread and coalesce tunings for the 72 and 144 node runs.
+18 230.65
+36 127.8
+72 69.20
+144 45.82
+
