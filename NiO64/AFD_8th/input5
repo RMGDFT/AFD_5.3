@@ -1,0 +1,167 @@
+# Description of run.
+description="NiO 64 test cell"
+verbose="true"
+AFM="true"
+#kohn_sham_ke_fft = "true"
+#sqrt_interpolation="true"
+#fast_density="false"
+
+# Wavefunction grid
+#processor_grid = "4 2 2"
+#wavefunction_grid="48 48 48"
+#wavefunction_grid="56 56 56"
+#wavefunction_grid="64 64 64"
+#wavefunction_grid="72 72 72"
+#wavefunction_grid="80 80 80"
+wavefunction_grid="88 88 88"
+#wavefunction_grid="96 96 96"
+localize_projectors = "false"
+localize_localpp = "false"
+occupations_type = "Fixed"
+renormalize_forces = "false"
+#preconditioner_threshold = "0.0001"
+#force_grad_order = "0"
+states_count_and_occupation_spin_up = "384 1.0 64 0.0"
+states_count_and_occupation_spin_down = "384 1.0 64 0.0"
+
+#non_local_block_size = "256"
+#nvme_weights = "true"
+#nvme_orbitals = "true"
+#nvme_weights_filepath = "/mnt/scratch/briggs/Weights/"
+#nvme_weights_filepath = "/mnt/scratch/briggs/Orbitals/"
+
+#write_serial_restart = "true"
+#read_serial_restart = "true"
+
+
+atomic_orbital_type = "delocalized"
+ionic_time_step = "20"
+#output_wave_function_file = "/dev/null"
+max_md_steps = "10"
+ldaU_mode = "Simple"
+#ldaU_radius = "7.00000000"
+#pseudopotential = "
+#Ni Ni.upf
+#"
+Hubbard_U=
+"
+Ni 6.5 3D
+"
+#kohn_sham_mg_timestep = "1.0"
+
+#exchange_correlation_type = "PBE0"
+
+# Units for bravais_lattice_type and atoms
+#crds_units=
+#"Bohr"
+#"Angstrom"
+
+bravais_lattice_type="Cubic Primitive"
+
+# Lattice constants 
+a_length="15.7622"
+b_length="15.7622"
+c_length="15.7622"
+alpha="0.0"
+beta="0.0"
+gamma="0.0"
+
+start_mode="LCAO Start"
+#start_mode="Restart From File"
+
+calculation_mode="Quench Electrons"
+#calculation_mode="Relax Structure"
+#calculation_mode="Constant Volume And Energy"
+#davidson_multiplier = "4"
+#davidson_max_steps = "15"
+
+kohn_sham_solver="davidson"
+#kohn_sham_solver="multigrid"
+subdiag_driver="scalapack"
+folded_spectrum = "false"
+charge_mixing_type = "Broyden"
+#charge_mixing_type = "Linear"
+drho_precond_q0 = "0.50000000"
+
+charge_density_mixing = "0.5"
+kohn_sham_mucycles = "3"
+max_scf_steps="100"
+potential_acceleration_constant_step="1.5"
+write_data_period="50"
+
+# Criterion used to judge SCF convergency 
+energy_convergence_criterion="1.0e-10"
+rms_convergence_criterion = "1.0e-8"
+
+atomic_coordinate_type="Cell Relative"
+
+# List  atomic symbol, coordinates, and movable flag (1 == movable) 
+# symbol and coordinates are required, moveable is optional, default is 1
+atoms = "
+O        0.250000        0.250000        0.250000    1    0.0
+O        0.000000        0.000000        0.750000    1    0.0
+O        0.250000        0.000000        0.500000    1    0.0
+O        0.500000        0.000000        0.250000    1    0.0
+O        0.000000        0.250000        0.500000    1    0.0
+O        0.500000        0.250000        0.000000    1    0.0
+O        0.000000        0.500000        0.250000    1    0.0
+O        0.250000        0.500000        0.000000    1    0.0
+O        0.750000        0.250000        0.750000    1    0.0
+O        0.500000        0.500000        0.750000    1    0.0
+O        0.750000        0.500000        0.500000    1    0.0
+O        0.250000        0.750000        0.750000    1    0.0
+O        0.500000        0.750000        0.500000    1    0.0
+O        0.750000        0.750000        0.250000    1    0.0
+O        0.750000        0.000000        0.000000    1    0.0
+O        0.000000        0.750000        0.000000    1    0.0
+O        0.000000        0.000000        0.250000    1    0.0
+O        0.250000        0.000000        0.000000    1    0.0
+O        0.000000        0.250000        0.000000    1    0.0
+O        0.250000        0.250000        0.750000    1    0.0
+O        0.500000        0.250000        0.500000    1    0.0
+O        0.750000        0.250000        0.250000    1    0.0
+O        0.250000        0.500000        0.500000    1    0.0
+O        0.500000        0.500000        0.250000    1    0.0
+O        0.750000        0.500000        0.000000    1    0.0
+O        0.250000        0.750000        0.250000    1    0.0
+O        0.500000        0.750000        0.000000    1    0.0
+O        0.500000        0.000000        0.750000    1    0.0
+O        0.750000        0.000000        0.500000    1    0.0
+O        0.000000        0.500000        0.750000    1    0.0
+O        0.000000        0.750000        0.500000    1    0.0
+O        0.750000        0.750000        0.750000    1    0.0
+Ni        0.000000        0.000000        0.000000    1    0.18
+Ni        0.250000        0.000000        0.750000    1    0.18
+Ni        0.500000        0.000000        0.500000    1    0.18
+Ni        0.000000        0.250000        0.750000    1    0.18
+Ni        0.250000        0.250000        0.500000    1    0.18
+Ni        0.500000        0.250000        0.250000    1    0.18
+Ni        0.000000        0.500000        0.500000    1    0.18
+Ni        0.250000        0.500000        0.250000    1    0.18
+Ni        0.500000        0.500000        0.000000    1    0.18
+Ni        0.750000        0.000000        0.250000    1    0.18
+Ni        0.750000        0.250000        0.000000    1    0.18
+Ni        0.000000        0.750000        0.250000    1    0.18
+Ni        0.250000        0.750000        0.000000    1    0.18
+Ni        0.750000        0.500000        0.750000    1    0.18
+Ni        0.500000        0.750000        0.750000    1    0.18
+Ni        0.750000        0.750000        0.500000    1    0.18
+Ni        0.250000        0.250000        0.000000    1    -0.18
+Ni        0.000000        0.000000        0.500000    1    -0.18
+Ni        0.250000        0.000000        0.250000    1    -0.18
+Ni        0.500000        0.000000        0.000000    1    -0.18
+Ni        0.000000        0.250000        0.250000    1    -0.18
+Ni        0.000000        0.500000        0.000000    1    -0.18
+Ni        0.500000        0.250000        0.750000    1    -0.18
+Ni        0.750000        0.250000        0.500000    1    -0.18
+Ni        0.250000        0.500000        0.750000    1    -0.18
+Ni        0.500000        0.500000        0.500000    1    -0.18
+Ni        0.750000        0.500000        0.250000    1    -0.18
+Ni        0.250000        0.750000        0.500000    1    -0.18
+Ni        0.500000        0.750000        0.250000    1    -0.18
+Ni        0.750000        0.750000        0.000000    1    -0.18
+Ni        0.750000        0.000000        0.750000    1    -0.18
+Ni        0.000000        0.750000        0.750000    1    -0.18
+"
+energy_output_units = "Rydbergs"
+fast_density="false"
