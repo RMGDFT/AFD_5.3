@@ -1,0 +1,38 @@
+lattice_vector = "
+  2.528830927232   0.000000000000   0.000000000000
+ -0.064229687782   2.528015111849   0.000000000000
+ -0.064229687782  -0.065882309374   2.527156490415"
+
+
+kpoint_mesh="23 23 23"
+
+occupation_electron_temperature_eV = "1.0e-2"
+atoms=
+"
+ S     0.000000000000e+00    0.000000000000e+00    0.000000000000e+00      1  0.000000
+"
+wavefunction_grid="16 16 16 "
+crds_units = "Angstrom"
+lattice_units = "Angstrom"
+atomic_coordinate_type = "Cell Relative"
+occupations_type = "MethfesselPaxton"
+output_wave_function_file = "/dev/null"
+rms_convergence_criterion = "1e-7"
+start_mode="LCAO Start"
+max_scf_steps = "100"
+calculation_mode="Quench Electrons"
+localize_projectors = "false"
+localize_localpp = "false"
+kpoint_distribution = "32"
+verbose="true"
+energy_convergence_criterion = "1.00000000e-9"
+internal_pseudo_type="ultrasoft"
+potential_grid_refinement="3"
+
+kohn_sham_solver="davidson"
+charge_density_mixing="0.15"
+charge_mixing_type="Broyden"
+potential_acceleration_constant_step="0.0"
+ecutwfc="102"
+alt_laplacian="false"
+kohn_sham_fd_order="12"

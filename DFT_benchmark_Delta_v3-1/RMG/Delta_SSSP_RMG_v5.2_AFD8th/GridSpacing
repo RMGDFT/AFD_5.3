@@ -1,0 +1,81 @@
+The RMG finite difference implementation uses more than 3 axes
+for non-orthogonal lattices with up to 13 for triclinic.
+This makes it cumbersome to list grid spacings so the
+following formula is used to provide a relative measure of
+grid density between atomic species. Only the value for
+the equilibrium cell from the Delta test is listed.
+
+ X = CubeRoot( Cell volume / basis size)
+
+Element   X (bohr)
+Ag        0.248
+Al        0.240
+Ar        0.221
+As        0.281
+Au        0.207
+Ba        0.209
+Be        0.259
+Bi        0.248
+Br        0.243
+B         0.262
+Ca        0.274
+Cd        0.260
+Cl        0.280
+Co        0.274
+Cr        0.226
+Cs        0.210
+Cu        0.180
+C         0.280
+Fe        0.212
+F         0.236
+Ga        0.246
+Ge        0.245
+He        0.211
+Hf        0.229
+Hg        0.241
+H         0.255
+In        0.307
+Ir        0.192
+I         0.347
+Kr        0.213
+K         0.220
+Li        0.228
+Lu        0.169
+Mg        0.289
+Mn        0.243
+Mo        0.238
+Na        0.209
+Nb        0.208
+Ne        0.229
+Ni        0.210
+N         0.244
+Os        0.203
+O         0.251
+Pb        0.250
+Pd        0.235
+Po        0.264
+Pt        0.197
+P         0.260
+Rb        0.213
+Re        0.213
+Rh        0.229
+Rn        0.214
+Ru        0.208
+Sb        0.236
+Sc        0.252
+Se        0.289
+Si        0.271
+Sn        0.248
+Sr        0.358
+S         0.305
+Ta        0.208
+Tc        0.249
+Te        0.259
+Ti        0.264
+Tl        0.264
+V         0.225
+W         0.299
+Xe        0.233
+Y         0.268
+Zn        0.235
+Zr        0.248

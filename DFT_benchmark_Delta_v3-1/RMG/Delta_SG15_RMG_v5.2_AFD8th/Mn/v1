@@ -1,0 +1,7 @@
+volume_0.94/input.00.log:[   0  25   25      446 ] Quench.cpp: final total energy =    -213.83946328 Ha
+volume_0.96/input.00.log:[   0  26   26      440 ] Quench.cpp: final total energy =    -213.84009027 Ha
+volume_0.98/input.00.log:[   0  30   30      505 ] Quench.cpp: final total energy =    -213.84042736 Ha
+volume_1.0/input.00.log:[   0  22   22      327 ] Quench.cpp: final total energy =    -213.84053714 Ha
+volume_1.02/input.00.log:[   0  18   18      257 ] Quench.cpp: final total energy =    -213.84040972 Ha
+volume_1.04/input.00.log:[   0  17   17      234 ] Quench.cpp: final total energy =    -213.84001575 Ha
+volume_1.06/input.00.log:[   0  19   19      297 ] Quench.cpp: final total energy =    -213.83940220 Ha

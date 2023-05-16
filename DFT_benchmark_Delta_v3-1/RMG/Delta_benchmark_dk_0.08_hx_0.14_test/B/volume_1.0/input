@@ -1,0 +1,48 @@
+lattice_vector = "
+  5.050980000000   0.000000000000   0.000000000000
+  2.673564803006   4.285376320059   0.000000000000
+  2.673564803006   1.483224136714   4.020509465826"
+
+pseudopotential="B b_pbe_v1.2.uspp.F.UPF"
+pseudo_dir="../../../pseudo"
+
+kpoint_mesh="15 15 15"
+
+occupation_electron_temperature_eV = "1.0e-2"
+atoms=
+"
+ B     4.896900000000e-01    8.459700000000e-01    4.896900000000e-01      1  0.000000
+ B     4.896900000000e-01    4.896900000000e-01    8.459700000000e-01      1  0.000000
+ B     8.459700000000e-01    4.896900000000e-01    4.896900000000e-01      1  0.000000
+ B     1.540300000000e-01    5.103100000000e-01    5.103100000000e-01      1  0.000000
+ B     5.103100000000e-01    5.103100000000e-01    1.540300000000e-01      1  0.000000
+ B     5.103100000000e-01    1.540300000000e-01    5.103100000000e-01      1  0.000000
+ B     2.788500000000e-01    8.695600000000e-01    2.788500000000e-01      1  0.000000
+ B     2.788500000000e-01    2.788500000000e-01    8.695600000000e-01      1  0.000000
+ B     8.695600000000e-01    2.788500000000e-01    2.788500000000e-01      1  0.000000
+ B     7.211500000000e-01    1.304400000000e-01    7.211500000000e-01      1  0.000000
+ B     7.211500000000e-01    7.211500000000e-01    1.304400000000e-01      1  0.000000
+ B     1.304400000000e-01    7.211500000000e-01    7.211500000000e-01      1  0.000000
+"
+wavefunction_grid="32 32 32 "
+crds_units = "Angstrom"
+lattice_units = "Angstrom"
+atomic_coordinate_type = "Cell Relative"
+occupations_type = "MethfesselPaxton"
+output_wave_function_file = "/dev/null"
+rms_convergence_criterion = "1e-7"
+start_mode="LCAO Start"
+max_scf_steps = "100"
+calculation_mode="Quench Electrons"
+localize_projectors = "false"
+localize_localpp = "false"
+verbose="true"
+energy_convergence_criterion = "1.00000000e-9"
+
+
+kohn_sham_solver="davidson"
+charge_density_mixing="0.15"
+charge_mixing_type="Broyden"
+potential_acceleration_constant_step="0.0"
+kohn_sham_fd_order="10"
+kpoint_distribution="4"

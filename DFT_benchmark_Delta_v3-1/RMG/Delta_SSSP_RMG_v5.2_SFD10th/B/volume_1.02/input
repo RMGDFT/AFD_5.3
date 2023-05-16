@@ -1,0 +1,50 @@
+lattice_vector = "
+  4.933125714060   0.000000000000   0.000000000000
+ -2.466562857030   4.272212188438   0.000000000000
+  2.466562857030  -1.424069329340   4.211834106340"
+
+pseudopotential="B b_pbe_v1.2.uspp.F.UPF"
+pseudo_dir="../../../pseudo"
+
+kpoint_mesh="15 15 15"
+
+occupation_electron_temperature_eV = "1.0e-2"
+atoms=
+"
+ B     9.896900000000e-01    1.031000000000e-02    6.746500000000e-01      1  0.000000
+ B     1.031000000000e-02    9.896900000000e-01    3.253500000000e-01      1  0.000000
+ B     9.896900000000e-01    6.540400000000e-01    6.746500000000e-01      1  0.000000
+ B     1.031000000000e-02    3.459600000000e-01    3.253500000000e-01      1  0.000000
+ B     3.459600000000e-01    1.031000000000e-02    6.746500000000e-01      1  0.000000
+ B     6.540400000000e-01    9.896900000000e-01    3.253500000000e-01      1  0.000000
+ B     7.788500000000e-01    2.211500000000e-01    7.274000000000e-02      1  0.000000
+ B     2.211500000000e-01    7.788500000000e-01    9.272600000000e-01      1  0.000000
+ B     7.788500000000e-01    6.304300000000e-01    7.274000000000e-02      1  0.000000
+ B     2.211500000000e-01    3.695700000000e-01    9.272600000000e-01      1  0.000000
+ B     3.695700000000e-01    2.211500000000e-01    7.274000000000e-02      1  0.000000
+ B     6.304300000000e-01    7.788500000000e-01    9.272600000000e-01      1  0.000000
+"
+wavefunction_grid="32 32 32 "
+crds_units = "Angstrom"
+lattice_units = "Angstrom"
+atomic_coordinate_type = "Cell Relative"
+occupations_type = "MethfesselPaxton"
+output_wave_function_file = "/dev/null"
+rms_convergence_criterion = "1e-7"
+start_mode="LCAO Start"
+max_scf_steps = "100"
+calculation_mode="Quench Electrons"
+localize_projectors = "false"
+localize_localpp = "false"
+kpoint_distribution = "32"
+verbose="true"
+energy_convergence_criterion = "1.00000000e-9"
+
+
+kohn_sham_solver="davidson"
+charge_density_mixing="0.15"
+charge_mixing_type="Broyden"
+potential_acceleration_constant_step="0.0"
+ecutwfc="100"
+alt_laplacian="false"
+kohn_sham_fd_order="10"

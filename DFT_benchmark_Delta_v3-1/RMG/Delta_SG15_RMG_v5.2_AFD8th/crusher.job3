@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH -A MAT151
+#SBATCH -J adelt24
+#SBATCH -o %x-%j.out
+#SBATCH -t 01:30:00
+#SBATCH -p batch
+#SBATCH -N 4
+export OMP_NUM_THREADS=1
+export RMG_NUM_THREADS=1
+export MPICH_OFI_NIC_POLICY=NUMA
+export MPICH_GPU_SUPPORT_ENABLED=0
+module load PrgEnv-gnu/8.3.3
+module load bzip2
+module load boost/1.79.0-cxx17
+module load cray-fftw
+module load cray-hdf5-parallel
+module load craype-accel-amd-gfx90a
+module load rocm/5.4.3
+export MPICH_GPU_SUPPORT_ENABLED=0
+
+ulimit -a
+export HSA_XNACK=0
+cd F
+source ../fcmd
+cd Fe
+source ../fcmd
+cd Ga
+source ../fcmd
+cd Ge
+source ../fcmd
+cd H
+source ../fcmd
+cd He
+source ../fcmd
+cd Hf
+source ../fcmd
+cd Hg
+source ../fcmd
