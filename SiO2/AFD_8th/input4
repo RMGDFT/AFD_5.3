@@ -1,0 +1,114 @@
+# Description of run.
+description="SiO2"
+energy_output_units = "Rydbergs"
+# Wavefunction grid
+#processor_grid = "4 2 2"
+#wavefunction_grid="40 40 40"
+#wavefunction_grid="44 44 44"
+#wavefunction_grid="48 48 48"
+wavefunction_grid="52 52 52"
+#wavefunction_grid="56 56 56"
+#wavefunction_grid="60 60 60"
+#wavefunction_grid="64 64 64"
+fast_density="false"
+#use_bessel_projectors = "true"
+
+localize_projectors = "false"
+localize_localpp = "false"
+occupations_type = "Fixed"
+renormalize_forces = "false"
+
+verbose="true"
+preconditioner_threshold = "0.0001"
+
+force_grad_order = "0"
+unoccupied_states_per_kpoint="15"
+ionic_time_step = "50"
+output_wave_function_file = "/dev/null"
+
+
+# Units for bravais_lattice_type and atoms
+lattice_units=
+#"Bohr"
+"Angstrom"
+
+bravais_lattice_type="Orthorhombic Primitive"
+
+a_length="7.12"
+b_length="7.12"
+c_length="7.12"
+alpha="0.0"
+beta="0.0"
+gamma="0.0"
+
+start_mode="LCAO Start"
+#start_mode="Restart From File"
+#write_serial_restart = "true"
+#read_serial_restart = "true"
+#write_qmcpack_restart = "true"
+max_md_steps = "100"
+#calculation_mode="Quench Electrons"
+#calculation_mode="Relax Structure"
+#relax_method="LBFGS"
+#relax_method="Fast Relax"
+#calculation_mode="Constant Volume And Energy"
+relax_max_force = "0.0001"
+kohn_sham_solver="davidson"
+#davidson_premg="1"
+#kohn_sham_solver="multigrid"
+#davidson_multiplier = "2"
+davidson_max_steps = "8"
+#internal_pseudo_type="ultrasoft" 
+write_eigvals_period = "1"
+#pseudopotential = "
+#Si  Si.upf
+#O   O.upf
+#"
+
+
+subdiag_driver="scalapack"
+#folded_spectrum = "true"
+#folded_spectrum_width = "0.30000000"
+#folded_spectrum_iterations = "0"
+
+#charge_mixing_type = "Linear"
+#charge_mixing_type = "Pulay"
+charge_mixing_type = "Broyden"
+max_scf_steps="30"
+potential_acceleration_constant_step="1.5"
+write_data_period="50"
+
+# Criterion used to judge SCF convergency 
+energy_convergence_criterion = "1.0e-10"
+rms_convergence_criterion = "1.0e-10"
+
+atomic_coordinate_type="Cell Relative"
+
+# List  atomic symbol, coordinates, and movable flag (1 == movable) 
+# symbol and coordinates are required, moveable is optional, default is 1
+atoms = "
+Si           0.0000000000       0.0000000000       0.0000000000 	    1
+Si           0.2500000000       0.2500000000       0.2500000000 	    1
+Si           0.7500000000       0.2500000000       0.7500000000 	    1
+Si           0.2500000000       0.7500000000       0.7500000000 	    1
+Si           0.7500000000       0.7500000000       0.2500000000 	    1
+Si           0.0000000000       0.5000000000       0.5000000000 	    1
+Si           0.5000000000       0.0000000000       0.5000000000 	    1
+Si           0.5000000000       0.5000000000       0.0000000000 	    1
+O            0.1250000000       0.1250000000       0.1250000000 	    1
+O            0.8750000000       0.1250000000       0.8750000000 	    1
+O            0.1250000000       0.8750000000       0.8750000000 	    1
+O            0.8750000000       0.8750000000       0.1250000000 	    1
+O            0.1250000000       0.6250000000       0.6250000000 	    1
+O            0.6250000000       0.1250000000       0.6250000000 	    1
+O            0.6250000000       0.6250000000       0.1250000000 	    1
+O            0.8750000000       0.6250000000       0.3750000000 	    1
+O            0.3750000000       0.1250000000       0.3750000000 	    1
+O            0.3750000000       0.6250000000       0.8750000000 	    1
+O            0.1250000000       0.3750000000       0.3750000000 	    1
+O            0.6250000000       0.8750000000       0.3750000000 	    1
+O            0.6250000000       0.3750000000       0.8750000000 	    1
+O            0.8750000000       0.3750000000       0.6250000000 	    1
+O            0.3750000000       0.8750000000       0.6250000000 	    1
+O            0.3750000000       0.3750000000       0.1250000000 	    1
+"

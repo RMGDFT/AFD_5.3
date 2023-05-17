@@ -1,0 +1,1 @@
+RMG and QE convergence results for SiO2. The cell is 24 atoms at gamma so not exceptionally accurate in an absolute sense but the difference between QE and RMG with various finite difference operators is what the calculations are intended to illustrate.
