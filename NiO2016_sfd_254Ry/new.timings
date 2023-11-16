@@ -1,0 +1,16 @@
+8th order Adaptive finite differencing.
+Two spin states. 14128 orbitals per spin state, 162.714 Ry Cutoff.
+using thread and coalesce tunings for the 72 and 144 node runs.
+18 230.65
+36 127.8
+72 69.20
+144 45.82
+
+12th order Standard finite differencing.
+Two spin states. 14128 orbitals per spin state, 254.241 Ry Cutoff.
+using thread and coalesce tunings for the 72 and 144 node runs.
+18  insufficient memory
+36  290.49
+72  150.54
+144 86.29
+

@@ -1,0 +1,1 @@
+RMG v5.0 performance data for a spin polarized 2016 atom NiO cell using the standard finite difference operator at 254 Ry equivalent cutoff. System load causes some variation in per step times so 10 steps were performed in each run and the fastest step per run used to generate the performance graphs.
